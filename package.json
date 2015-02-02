@@ -1,6 +1,6 @@
 {
   "name": "project-of-file",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Find the project (npm or bower) which a file belongs to, by traversing up the directory tree",
   "main": "index.js",
   "scripts": {
