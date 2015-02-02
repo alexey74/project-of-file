@@ -1,7 +1,7 @@
 {
   "name": "project-of-file",
   "version": "0.0.0",
-  "description": "Find the project (npm or bower) which a file belongs to, by traversing up the file heirarchy",
+  "description": "Find the project (npm or bower) which a file belongs to, by traversing up the directory tree",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
