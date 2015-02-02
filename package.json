@@ -1,0 +1,25 @@
+{
+  "name": "project-of-file",
+  "version": "0.0.0",
+  "description": "Find the project (npm or bower) which a file belongs to, by traversing up the directory tree",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bguiz/project-of-file"
+  },
+  "keywords": [
+    "file",
+    "path",
+    "npm",
+    "json"
+  ],
+  "author": "bguiz",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/bguiz/project-of-file/issues"
+  },
+  "homepage": "https://github.com/bguiz/project-of-file"
+}
