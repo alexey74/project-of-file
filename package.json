@@ -3,6 +3,9 @@
   "version": "0.0.3",
   "description": "Find the project (npm or bower) which a file belongs to, by traversing up the directory tree",
   "main": "index.js",
+  "bin": {
+    "project-of-file": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
