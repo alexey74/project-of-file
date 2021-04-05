@@ -60,5 +60,24 @@ function findProjectNameOfFile(file, base) {
   return 'unknown';
 }
 
+/*
+ * Obtains the name and version of the project that this file belongs to.
+ *
+ * @see Use in conjunction with `findProjectJsonFile` function.
+ * @param {string} file Path of the file in question
+ * @param {string} base Base path beyond which search should terminate
+ * @return {Array|null} Name and version of the project that the file belonged to,
+ *   or `null` if not able to determine.
+ */
+function findProjectNameVersionOfFile(file, base) {
+  var projectJson = findProjectJsonOfFile(file, base);
+  if (projectJson) {
+    var json = require(projectJson);
+    return [json.name, json.version];
+  }
+  return null;
+}
+
 module.exports.path = findProjectJsonOfFile;
 module.exports.name = findProjectNameOfFile;
+module.exports.nameVer = findProjectNameVersionOfFile;
