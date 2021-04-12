@@ -38,7 +38,7 @@ function findProjectJsonOfFile(file, base) {
       currentDir = path.resolve(currentDir, '..');
     }
   }
-  while (!projectJson && currentDir.length >= base.length);
+  while (!projectJson && currentDir.length > base.length);
   return projectJson;
 };
 
